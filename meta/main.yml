@@ -1,7 +1,8 @@
 galaxy_info:
+  role_name: plex
   author: Jelle Sebreghts
   description: Role to install Plex Media Server
-  license: MIT
+  license: license (MIT)
   min_ansible_version: 2.1
   platforms:
     - name: Debian
