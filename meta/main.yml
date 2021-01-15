@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Jelle Sebreghts
+  description: Role to install Plex Media Server
+  license: MIT
+  min_ansible_version: 2.1
+  platforms:
+    - name: Debian
+      versions:
+        - buster
+
+  galaxy_tags: 
+    - plex
+    - plexmediaserver
+
+dependencies: []

@@ -1,0 +1,12 @@
+#
+# Customize Plex's config
+#
+# Identify this as a service override
+[Service]
+#
+#  Move the data directory
+Environment="PLEX_MEDIA_SERVER_APPLICATION_SUPPORT_DIR={{ plex_app_support_dir }}"
+#
+#  These values are only needed if you wish to change user & group
+User={{ plex_service_user | default('plex') }}
+Group={{ plex_service_group | default('plex') }}

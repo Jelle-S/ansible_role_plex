@@ -1,0 +1,4 @@
+---
+plex_app_support_dir: "/var/lib/plexmediaserver/Library/Application Support"
+plex_service_user: "plex"
+plex_service_group: "plex"
