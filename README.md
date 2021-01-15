@@ -23,6 +23,7 @@ plex_service_group: "plex"
 
 ## Dependencies
 
+None.
 
 ## Example Playbook
 
@@ -34,5 +35,5 @@ plex_service_group: "plex"
 
 ## License
 
-[MIT](https://raw.githubusercontent.com/Jelle-S/ansible_role_plex/master/LICENSE)J
+[MIT](https://raw.githubusercontent.com/Jelle-S/ansible_role_plex/master/LICENSE)
 
