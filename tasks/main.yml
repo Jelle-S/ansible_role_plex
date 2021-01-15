@@ -44,7 +44,9 @@
     state: directory
     owner: "{{ plex_service_user }}"
     group: "{{ plex_service_group }}"
-    mode: 0755
+    mode: u=rwX,g=rX,o=rX
+    recurse: yes
+  notify: restart plex
 
 - name: Ensure Plex Media Server autostarts.
   service:
