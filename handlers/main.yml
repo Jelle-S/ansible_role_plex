@@ -1,5 +1,6 @@
 ---
 - name: restart plex
-  service:
+  systemd:
+    daemon_reload: yes
     name: plexmediaserver
     state: restarted
