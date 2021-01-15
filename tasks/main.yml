@@ -38,6 +38,14 @@
     mode: 0644
   notify: restart plex
 
+- name: Ensure the Plex Media Server app support dir exists with the correct permissions.
+  file:
+    path: "{{ plex_app_support_dir }}"
+    state: directory
+    owner: "{{ plex_service_user }}"
+    group: "{{ plex_service_group }}"
+    mode: 0755
+
 - name: Ensure Plex Media Server autostarts.
   service:
     name: plexmediaserver
