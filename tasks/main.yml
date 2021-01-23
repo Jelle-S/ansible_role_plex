@@ -48,6 +48,14 @@
     recurse: yes
   notify: restart plex
 
+- name: Ensure the /var/lib/plexmediaserver dir has the correct permissions.
+  file:
+    path: /var/lib/plexmediaserver
+    state: directory
+    owner: "{{ plex_service_user }}"
+    group: "{{ plex_service_group }}"
+  notify: restart plex
+
 - name: Ensure Plex Media Server autostarts.
   service:
     name: plexmediaserver
